@@ -1,4 +1,3 @@
-# these resources are added to provide the vpc_id and subnets to the consul module
 # aws_default_* are resources that terraform doesn't creat, rather adopt
 # See https://www.terraform.io/docs/providers/aws/r/default_vpc.html for more info
 
