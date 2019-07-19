@@ -1,5 +1,5 @@
 resource "aws_autoscaling_group" "nginx" {
-  name                      = "nginx_${var.VERSION}-${aws_launch_configuration.nginx.name}"
+  name                      = "nginx-${var.VERSION}-${aws_launch_configuration.nginx.name}"
   launch_configuration      = "${aws_launch_configuration.nginx.name}"
   vpc_zone_identifier       = ["${aws_default_subnet.default-az1.id}", "${aws_default_subnet.default-az2.id}", "${aws_default_subnet.default-az3.id}"]
   health_check_grace_period = 300
