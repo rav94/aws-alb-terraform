@@ -5,7 +5,7 @@ variable "AWS_REGION" {
   default = "ap-southeast-1"
 }
 
-varaible "COREOS_AMI" {
+variable "COREOS_AMI" {
   default = "ami-028e043d0e518a84a"
 }
 
