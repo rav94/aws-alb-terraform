@@ -8,4 +8,3 @@ resource "aws_lb_listener" "nginx" {
     type             = "forward"
   }
 }
-

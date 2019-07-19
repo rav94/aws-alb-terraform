@@ -16,5 +16,3 @@ resource "aws_lb_target_group" "nginx" {
     matcher             = "200,202"
   }
 }
-
-
