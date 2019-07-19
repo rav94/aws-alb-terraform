@@ -9,7 +9,7 @@ resource "aws_autoscaling_group" "nginx" {
   desired_capacity          = "${var.DESIRED_INSTANCE_SIZE}"
   wait_for_elb_capacity     = "${var.MINIMUM_INSTANCE_SIZE}"
   termination_policies      = ["OldestInstance"]
-  target_group_arns         = ["${aws_lb_target_group.nginx.arn}", "${aws_lb_target_group.nginx.arn}"]
+  target_group_arns         = ["${aws_lb_target_group.nginx.arn}"]
 
   depends_on = ["aws_launch_configuration.nginx"]
 
